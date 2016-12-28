@@ -1,0 +1,11 @@
+#!/bin/bash
+
+./minify
+
+echo "Minified"
+
+rm -f amazones.zip
+
+zip amazones.zip *.js background.html icon2.png manifest.json
+
+echo "Done."
