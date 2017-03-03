@@ -1,5 +1,6 @@
 function locationShouldRedirect(url) {
-  return url.indexOf('amazon.com') != -1;
+  return (url.indexOf('amazon.com') != -1 &&
+    url.indexOf('aws') == -1);
 }
 
 if (locationShouldRedirect(window.location.host)) {
